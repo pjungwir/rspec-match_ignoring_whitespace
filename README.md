@@ -19,7 +19,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rspec-match_fuzzy'
+gem 'rspec-match_ignoring_whitespace'
 ```
 
 And then execute:
@@ -28,7 +28,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec-match_fuzzy
+    $ gem install rspec-match_ignoring_whitespace
 
 
 Usage
