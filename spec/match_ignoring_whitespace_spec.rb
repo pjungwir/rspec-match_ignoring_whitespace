@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 describe 'match_ignoring_whitespace' do
 
   let(:expected) { "πόλλ΄ οἶδ΄ ἀλώπηξ, ἀλλ΄ ἐχῖνος ἓν μέγα." }

@@ -38,3 +38,6 @@ Layout/EmptyLinesAroundBlockBody:
 
 Layout/IndentHeredoc:
   Enabled: false
+
+Style/Encoding:
+  Enabled: false
