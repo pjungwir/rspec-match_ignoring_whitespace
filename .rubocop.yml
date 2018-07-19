@@ -1,0 +1,40 @@
+Metrics/BlockLength:
+  Enabled: false
+Metrics/LineLength:
+  Exclude:
+    - "Rakefile"
+  Max: 120
+
+Metrics/MethodLength:
+  Exclude:
+    - "spec/**/*"
+  Max: 35
+Style/BlockDelimiters:
+  EnforcedStyle: line_count_based
+  Exclude:
+    - "spec/**/*"
+
+Style/Documentation:
+  Exclude:
+    - "spec/**/*"
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%w": "[]"
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Gemspec/OrderedDependencies:
+  Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/IndentHeredoc:
+  Enabled: false
