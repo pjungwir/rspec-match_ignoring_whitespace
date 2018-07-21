@@ -21,6 +21,8 @@ Gem::Specification.new do |s|
   s.test_files = `git ls-files -- {test,spec,fixtures}/*`.split("\n")
 
   s.add_dependency 'rspec', '>= 3.2.0'
+  s.add_dependency 'levenstein_with_path'
+  s.add_dependency 'word_wrap'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'simplecov'
