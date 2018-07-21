@@ -57,7 +57,7 @@ RSpec::Matchers.define :match_ignoring_whitespace do |expected|
       end
     end
 
-    message = runs.flat_map do |run|
+    runs.flat_map do |run|
       case run
       when LevensteinWithPath::Keep
         WordWrap.ww(run.token.join(' '), 80).split("\n")

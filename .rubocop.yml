@@ -41,3 +41,12 @@ Layout/IndentHeredoc:
 
 Style/Encoding:
   Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
