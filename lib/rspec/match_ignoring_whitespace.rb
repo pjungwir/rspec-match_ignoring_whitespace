@@ -3,7 +3,7 @@ require 'levenstein_with_path'
 require 'word_wrap'
 
 def collapse_spaces(str)
-  str.gsub(/[\n[[:blank:]]]+/, ' ').strip
+  str.gsub(/[[:space:]]+/, ' ').strip
 end
 
 RSpec::Matchers.define :match_ignoring_whitespace do |expected|
