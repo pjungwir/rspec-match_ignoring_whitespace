@@ -60,7 +60,9 @@ RSpec::Matchers.define :match_ignoring_whitespace do |expected|
     runs.flat_map do |run|
       case run
       when LevensteinWithPath::Keep
-        WordWrap.ww(run.token.join(' '), 80).split("\n")
+        WordWrap.ww(run.token.join(' '), 78).split("\n").map do |line|
+          "  #{line}"
+        end
       when LevensteinWithPath::Swap
         WordWrap.ww(run.token1.join(' '), 78).split("\n").map do |line|
           "- #{line}"

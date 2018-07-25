@@ -68,12 +68,12 @@ describe 'match_ignoring_whitespace' do
     specify 'a string missing a space' do
       expect("πόλλ΄ οἶδ΄ ἀλώπηξ,ἀλλ΄ ἐχῖνος ἓν μέγα.").not_to matcher
       expect(matcher.failure_message).to eq [
-        'πόλλ΄ οἶδ΄',
+        '  πόλλ΄ οἶδ΄',
         # TODO: It would be nice to join things like Delete+Swap or Swap+Insert:
         '- ἀλώπηξ,',
         '- ἀλλ΄',
         '+ ἀλώπηξ,ἀλλ΄',
-        'ἐχῖνος ἓν μέγα.',
+        '  ἐχῖνος ἓν μέγα.',
       ].join("\n")
     end
     specify 'expecting nil' do
