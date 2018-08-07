@@ -9,8 +9,8 @@ First we convert all adjacent whitespace to a single space, including tabs, newl
 Then we also strip whitespace from the beginning and end.
 Finally we compare the results for equality.
 
-This gem borrows almost everything from [`rspec-match_fuzzy`](https://github.com/winebarrel/rspec-match_fuzzy/),
-except the comparison algorithm is just a bit different.
+This gem started out borrowing almost everything from [`rspec-match_fuzzy`](https://github.com/winebarrel/rspec-match_fuzzy/),
+but the comparison algorithm is a bit different, and it gives much nicer diffs (based on the Levenstein sequence of whole-word-edits).
 
 
 Installation
